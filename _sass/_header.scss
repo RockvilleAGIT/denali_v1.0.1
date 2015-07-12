@@ -1,15 +1,32 @@
 .site-header {
 	height: 75px;
 	background-color: #00A3A3;
+	top: -5px;
+}
+
+
+@font-face {
+    font-family: 'eraserregular';
+    src: url('fonts/EraserRegular-webfont.eot');
+    src: url('fonts/EraserRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/EraserRegular-webfont.woff') format('woff'),
+         url('fonts/EraserRegular-webfont.ttf') format('truetype'),
+         url('fonts/EraserRegular-webfont.svg#eraserregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .logo {
-
 	float: left;
+	margin: 0 0 0 30px;
 }
+
 
 .nav {
     background-color: transparent;
+	font-family: 'eraserregular', Arial, sans-serif;
+	margin: 20px 30px 0 0;
   }
  
 .nav ul {
@@ -20,43 +37,55 @@
 	margin: 0;
 }
 .nav li {
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.2em;
+	
+	font-size: 1.0em;
 	line-height: 40px;
 	height: 40px;
-	border-bottom: 1px solid #888;
 	float: right;
 }
+
+
  
 .nav a {
+	font-family: 'eraserregular', Arial, sans-serif;
 	text-decoration: none;
+	margin-left: 20px;
 	color: #fff;
-	display: block;
+	display: inline-block;
 	transition: .3s background-color;
 	text-transform: uppercase;
 }
+
  
 .nav a:hover {
 	background-color: #005f5f;
+	color: #7eb9be;
+	-webkit-transform: rotate(-10deg) scale(1.2);
+    -moz-transform: rotate(-10deg) scale(1.2);
+    -o-transform: rotate(-10deg) scale(1.2);
+	
 }
  
 .nav a.active {
-	background-color: #fff;
+	background-color: transparent;
 	color: #444;
 	cursor: default;
 }
  
-@media screen and (min-width: 400px) {
+@media screen and (min-width:350px)     {
   .nav li {
-    width: 120px;
+    width: auto;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
 	display: inline-block;
-    margin-right: -8px;
+    margin-right: 10px;
 
   }
 
 }
+
+
+
 
